@@ -6,6 +6,6 @@ package textbox
 import "errors"
 
 var (
-	ErrBlocked = errors.New("You cannot exit this way.")
-	ErrCannotCompute = errors.New("I don't understand that instruction.")
+	errRouteBlocked  = errors.New("You cannot go this way.")
+	errCannotCompute = errors.New("I don't understand that instruction.")
 )

@@ -25,7 +25,7 @@ func (m *Map) FindRoom(newPosition []byte) (*Room, error) {
 			return m.Rooms[i], nil
 		}
 	}
-	return nil, ErrBlocked
+	return nil, errRouteBlocked
 }
 
 // AddRoom adds the specified room to the map. Errors if room position already exists.
